@@ -1,0 +1,79 @@
+/*For mobile devices*/
+@media screen and (max-width:320px) {
+    .conatiner{
+        margin-inline: 1rem;
+    }
+    .works--content{
+        grid-template-columns: max-content;
+        row-gap: 1rem;
+    }
+    .services--card{
+        padding-block: 1.5rem;
+    }
+}
+/*for Medium Devices*/
+@media screen and (max-width:576px){
+    .home--container,
+    .about--conatiner,
+    .works--conatiner,
+    .services--conatiner,
+    .projects--conatiner,
+    .contact--container{
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+    .about--conatiner .button{
+        margin: 8.9px 0;
+        font-size: 10px;
+    }
+}
+/*min*/
+@media screen and (min-width:600px){
+    .services--conatiner,
+    .projects--conatiner{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about--img{
+        width: 60%;
+        height: 60%;
+    }
+    .contact--container{
+        margin: 40px;
+    }
+    
+}
+@media screen and (min-width:768px){
+    .nav--menu{
+        width: 55%;
+    }
+    .home--container,
+    .work--conatiner,
+    .about--conatiner{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+    .home--data{
+        text-align: center;
+    }
+    .about--data,:is(.about--data) :is(.section--subtitle,.section--title){
+        text-align: initial;
+        padding: 0px 30px;
+    }
+    .about--conatiner{
+        display: flex;
+        padding: 0px 20px;
+    }
+   .about--img {
+        width: 550px;
+        height: 550px;
+    }
+    .about--data{
+        text-align: initial;
+        order: 1;
+    }
+}
+/**/
+/**/
+/**/
+/**/
+/**/
